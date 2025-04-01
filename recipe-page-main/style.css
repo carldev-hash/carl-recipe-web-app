@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --prep: hsl(332, 51%, 32%);
+    --ingre: hsl(14, 45%, 36%);
+
+}
+body {
+    padding-top: 5rem;
+    /* height: 100vh    ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    margin-inline: auto;
+    background: hsl(30,10%,34%);
+}
+.container {
+    /* border: 1px solid; */
+    padding: 5%;
+    background: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    /* width: 1400px; */
+    max-width: 750px;
+}
+h1,h2,h3 {
+    font-family: "Young Serif", serif;
+    color: hsl(24,5%,18%);
+}
+
+p {
+    font-size: 16px;
+    color: hsl(30,10%,34%);
+    font-family: "Outfit", sans-serif;
+}
+img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+.prepare-time {
+    padding-top: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+ul li::marker {
+    color: var(--prep);
+}
+ul li, ol li {
+    margin-left: 2rem;
+    margin-block: 1.5rem;
+} 
+ul li:nth-child(1)::marker,   ol li::marker{
+    color: var(--ingre);
+}
+h4 {
+    color: var(--prep);
+    font-size: 1.4rem;
+    font-family: "Outfit", sans-serif;
+}
+.ingre h1, .instru h1, .nutrit h1 {
+    color: var(--ingre);
+}
+.ingre, .instru {
+    border-bottom: 1px solid hsl(30, 18%, 84%);
+    margin-bottom: 2rem;
+    
+}
+
+ol li {
+   font-weight: 700;
+    font-size: 1.3rem;
+    font-family: "Outfit" sans-serif;
+}
+ol li p {
+    margin-left: 1rem;
+    font-weight: 400    ;
+}
+
+
+.flex {
+    /* margin-top: 2rem; */
+    display: flex;
+    /* flex-direction: column; */
+}
+.left p, .right p {
+    width: 100%;
+    border-bottom: 1px solid hsl(30, 18%, 84%);
+    margin: 1rem 0;
+    padding: 1rem ;
+    font-weight: 700;
+}
+.left p:nth-last-child(1), .right p:nth-last-child(1) {
+    border: none;
+}
+.right p {
+    color: var(--ingre);
+}
+.left {
+    flex:1;
+    /* background: red; */
+}
+.right {
+    flex: 1;
+}
+@media (max-width: 375px) {
+    
+}
